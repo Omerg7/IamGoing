@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Driving">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/places_list"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:hint="אני יוצא מ - " />
+
+        <AutoCompleteTextView
+            android:id="@+id/goingTo_List"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:hint="אני נוסע ל- " />
+
+        <Switch
+            android:id="@+id/leavingNow"
+            android:layout_width="149dp"
+            android:layout_height="38dp"
+            android:text="אני יוצא עכשיו" />
+
+        <ImageView
+            android:id="@+id/car_animation"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/image_processing20200423_23359_anbk2g" />
+
+        <Button
+            android:id="@+id/selectTime"
+            android:onClick="popTimePicker"
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            android:text="הגדר זמן יציאה עתידי" />
+
+
+
+        <Button
+            android:id="@+id/Driving_Enter"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:text="מאשר"
+            android:textSize="60sp"
+            android:onClick="move"
+        />
+
+
+    </LinearLayout>
+
+</LinearLayout>

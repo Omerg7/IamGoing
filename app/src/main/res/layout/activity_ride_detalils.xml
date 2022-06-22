@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ride_detalils_Activity">
+
+    <LinearLayout
+        android:id="@+id/laytiftkg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_driver_name"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="50sp" />
+
+        <LinearLayout
+            android:layout_width="561dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_from"
+                android:layout_width="205dp"
+                android:layout_height="102dp"
+                android:text="From:"
+                android:textAllCaps="false"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tv_to"
+                android:layout_width="290dp"
+                android:layout_height="102dp"
+                android:text="To:"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gsdgsdgb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="291dp"
+                android:layout_height="102dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="290dp"
+                android:layout_height="102dp"
+                android:layout_weight="1"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_contact"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            app:srcCompat="@drawable/contactdriver"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_join_ride"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:text="Join Ride" />
+
+    </LinearLayout>
+
+</LinearLayout>

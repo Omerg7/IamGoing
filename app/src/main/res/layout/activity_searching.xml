@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Searching">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <AutoCompleteTextView
+            android:id="@+id/searching_from"
+            android:layout_width="412dp"
+            android:layout_height="45dp"
+            android:hint="אני מחפש מ..." />
+
+        <AutoCompleteTextView
+            android:id="@+id/searching_to"
+            android:layout_width="416dp"
+            android:layout_height="49dp"
+            android:hint="אני צריך להגיע ל..." />
+
+        <ImageButton
+            android:id="@+id/searching_ride"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:backgroundTint="#FFFFFF"
+            app:srcCompat="@android:drawable/ic_search_category_default"
+            tools:srcCompat="@android:drawable/ic_search_category_default" />
+
+        <ListView
+            android:id="@+id/lv_searching"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
